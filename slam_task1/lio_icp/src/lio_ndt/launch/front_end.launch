@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lio_ndt)/rviz/front_end.rviz"></node>
+    <node pkg="lio_ndt" type="front_end_node" name="front_end_node" output="screen"></node>
+    <node pkg="lio_ndt" type="trajectory_saver_node" name="trajectory_saver_node" output="screen"/>
+</launch>
